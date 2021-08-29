@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+a,
+Link {
+  text-decoration: none;
+  color: #161616;
+}

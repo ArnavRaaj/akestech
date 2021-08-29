@@ -1,0 +1,18 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    min-height: 5vh;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.nav-home,
+.nav-products {
+    margin: 1rem;
+    padding: 0.2rem 0.5rem ;
+    font-size: 1.5rem;
+    border-bottom: 0.01rem solid #d6d6d6;
+    color: #161616;
+}
