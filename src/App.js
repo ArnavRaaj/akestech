@@ -46,7 +46,7 @@ function App() {
         <Route path="/products/:productId" element={<ProductDetails products={products} />} />
         <Route path="/products/categories" element={<Sidebar categories={categories} />} />
         <Route path="/products/sort" element={<SortedProduct products={products} />} />
-        <Route path="/products/category/:slugs" element={<Slug products={products} categories={categories} />} />
+        <Route path="/products/category/:slugs" element={<Slug products={products} />} />
       </Routes>
     </div>
   );

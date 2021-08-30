@@ -5,15 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Slug = ({ products }) => {
     const { slugs } = useParams();
-    // console.log("from slugs....", { slugs });
-    // console.log("from categories.....", { categories })
     const productsFromCategory = products.filter(product => product.category === slugs);
-    // console.log("from products of category...", productsFromCategory);
 
     return (
         <div className="slug-container">
             <div className="slug-head">
-                <h2>Our Finest in {slugs}</h2>
+                <h2>Our Finest collection in {slugs}</h2>
                 <Link to="/products/categories" className="back-arrow"> <AiOutlineArrowLeft />Categories</Link>
             </div>
 

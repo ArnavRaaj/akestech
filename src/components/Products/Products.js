@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Products.css';
 import { Link } from 'react-router-dom';
 import { AiFillStar } from "react-icons/ai";
 import Pagination from '../Pagination/Pagination';
 
-const Products = ({ products, path }) => {
+const Products = ({ products }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(4);
 

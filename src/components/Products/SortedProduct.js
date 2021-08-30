@@ -2,12 +2,9 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AiFillStar } from "react-icons/ai";
-import { useLocation, useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const SortedProduct = ({ products }) => {
-    // const { name } = useParams();
-    // console.log("from desc...", { name });
-    // const query = new URLSearchParams(useLocation().search)
+const SortedProduct = () => {
 
     const [sortedProducts, setSortedProducts] = useState([]);
     const getSortedProducts = async () => {
